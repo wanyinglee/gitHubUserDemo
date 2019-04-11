@@ -9,7 +9,7 @@
 
 module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-build-control');
-  var pkg = require('./package.json');
+  require('./package.json');
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
 
     // Project settings
     yeoman: appConfig,
-    
+
     // add grunt build control
     buildcontrol: {
       options: {
@@ -43,7 +43,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:<username>/<githubrepo>.git',
+          remote: 'git@github.com:wanyinglee/gitHubUserDemo.git',
           branch: 'gh-pages'
         }
       },
