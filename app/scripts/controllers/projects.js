@@ -12,14 +12,14 @@ angular.module('taigerAppApp.controllers')
     $scope.reposData = userDataService.getRepoData();
     $rootScope.title = $routeParams.username + "'s Projects";
     $scope.getProjectReadMe = function(repo) {
-      gitHubUserService.getReadMeContent(repo).then(response => {
+      gitHubUserService.getReadMeContent(repo).then(function(response) {
         if (response.status === 200) {
           userDataService.setReadMeFile(response.data);
           $location.path("/" + repo.full_name);
         } else {
           alert("No README file found!");
         }
-      }, error => {
+      }, function(error) {
         alert("No README file found!");
       });
     };
