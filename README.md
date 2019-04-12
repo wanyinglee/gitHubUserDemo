@@ -19,7 +19,7 @@ $ npm install npm -g
 ```bash
 $ npm install -g yo
 ```
--Install angular generator
+- Install angular generator
 ```bash
 $ npm install -g generator-angular
 ```
@@ -28,4 +28,9 @@ $ npm install -g generator-angular
 ```bash
 $ grunt serve
 ```
+
+## Deployment
+- Host: GitHub Pages
+- Tool: Grunt Build Control
+- Link: https://wanyinglee.github.io/gitHubUserDemo/
 
